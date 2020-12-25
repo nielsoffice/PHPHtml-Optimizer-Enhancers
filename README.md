@@ -6,11 +6,13 @@ PHPHtml-Optimizer w/Enhancer v (support1.3.1.2)
 | `send_to()`    | `send_to()`    | redirect to    |url       |
 | `view_to()`    | `view_to()`    | template file  |DIR/KEY/filename |
 | `bring_to()`    | `bring_to()`  | get file       |DIR/KEY/filename/Extension/INCLUDES/INCLUDES_ONCE/REQUIRE |
-| `bring_to()`    | `bring_to()`  | get file       |DIR/KEY/filename/Extension/INCLUDES/INCLUDES_ONCE/REQUIRE |
 | `isbelongs()`   | `belongs_to()` | send file into page ? |PageName/KeyFolderPath/__KEY_FOLDER_PATH__/'keyFolderPath' |
 | `getKeyPath()`   | `GetKeyFolderPath()` | get page? folder key | none |
-| `__BR()`   | `BREAK($assoc=null)` | Html <Br/> tag | FUNC_ASSOC/METHOD_ASSOC/CLASS_ASSOC |
-| `__BR()`   | `BREAK($assoc=null)` | Html <Br/> tag | FUNC_ASSOC/METHOD_ASSOC/CLASS_ASSOC |
+| `__BR()`   | `BREAK()` | Html <Br/> tag | FUNC_ASSOC/METHOD_ASSOC/CLASS_ASSOC |
+| `__HR()`   | `LINE()` | Html <hr/> tag | FUNC_ASSOC/METHOD_ASSOC/CLASS_ASSOC |
+| `__space()`   | `SPACE()` | Space string | none |
+| `MERGE()`   | `MERGE()` | Make ELEM/ELEMENTS Once at the time| none |
+| `SetFileExT()`   | `SetFileExtension() ` | Set file extention |  `__PHP__`, ` __HTML__ `,`__CSS__`,`__JS__`,`__JPG__`,`__JPEG__`,`__PNG__`,`__GIF__`, ` __BMP__`, `__TEX__`,`__XLS__`,`__XLSX__`,`__DOCX__`, `__DOCX__`,`__PPT__`,`__PPTX__`,`__ODT__`, `__TXT__`, `__RTF__` |
 
 
 
