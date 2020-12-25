@@ -1,4 +1,4 @@
-PHPHtml-Optimizer w/Enhancer v (support1.3.1.2)
+PHPHtml-Optimizer w/Enhancer v1.0 (support Optimizer 1.3.1.2)
 
 
 |Function        | Method         |  Description   |  Parameters                   |  
