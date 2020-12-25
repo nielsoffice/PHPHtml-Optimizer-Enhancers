@@ -14,8 +14,8 @@ PHPHtml-Optimizer w/Enhancer v1.0 (support Optimizer 1.3.1.2)
 | `MERGE()`   | `MERGE()` | Make ELEM/ELEMENTS Once at the time| none |
 | `SetFileExT()`   | `SetFileExtension() ` | Set file extention | `__PHP__`,` __HTML__ `,`__CSS__`,`__JS__`,`__JPG__`,`__JPEG__`,`__PNG__`,`__GIF__`, ` __BMP__`, `__TEX__`,`__XLS__`,`__XLSX__`,`__DOCX__`, `__DOCX__`,`__PPT__`,`__PPTX__`,`__ODT__`, `__TXT__`, `__RTF__` |
 | `SetElemAttr()`   | `SetElemAttr()` | Set Elements HTML custom attr | ['attrName'],['attrValue'] |
-| `DOIF()`   | `__magicIF()` | append version of IF statements design for optimizer inline | Condition[Bool]/Result |
-| `DOELSE()`   | `__magicELSE()` | append version of IFELSE statements design for optimizer inline | Condition[Bool]/DefaultValue/Result |
+| `DOIF()`   | `__magicIF()` | append version of IF statements design for optimizer inline | Condition[Bool]/Result __NOTE:__ Not support Global variable use Ternary IF instead |
+| `DOELSE()`   | `__magicELSE()` | append version of IFELSE statements design for optimizer inline | Condition[Bool]/DefaultValue/Result  __NOTE:__ Not support Global variable use Ternary IF instead|
 | `PERFORM()`   | `PERFORM()` | Execute Association Optimizer Method/Function | MethodsOrFunctions/FUNC_ASSOC/METHOD_ASSOC/CLASS_ASSOC |
 | `STRING()`   | `STRING()` | Print "String" without Element | strings/FUNC_ASSOC/METHOD_ASSOC/CLASS_ASSOC |
 | `ATTR()`   | `ATTR()` | Html Header body template | META / TITLE / LINK / SCRIPT / CUSTOM_END / BEGIN_CUSTOM_END |
