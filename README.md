@@ -20,7 +20,7 @@ PHPHtml-Optimizer w/Enhancer v1.0 (support Optimizer 1.3.1.2)
 | `STRING()`   | `STRING()` | Print "String" without Element | strings/FUNC_ASSOC/METHOD_ASSOC/CLASS_ASSOC |
 | `ATTR()`   | `ATTR()` | Html Header body template | META / TITLE / LINK / SCRIPT / CUSTOM_END / BEGIN_CUSTOM_END |
 | `ELEM()`   | `ELEM()` | Custom HTML Elements/Tags | ElemName/Value/ElemAttr/ElemId/ElemClass |
-| `GETFROM()`   | `GETFROM()` | Directory/Path Cleaner parameter of bring_to,view_to  | DIR/KEY/ `belong_to(GETFROM(['RURI'],['KEY']), 'home', __PHP__)` `bring_to()` |
+| `GETFROM()`   | `GETFROM()` | Directory/Path Cleaner parameter of bring_to,view_to  | DIR/KEY/ ` bring_to(GETFROM(['PATH','inc']), 'hero', __PHP__);` `view_to()` |
 | `SET_DIR_PATH()`   | `SET_DIR_PATH()` | Path/Dir/Ruri - registration holder | folder-file-directory, LOCALHOST |
 
 For Installation / Configuration <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
