@@ -30,13 +30,8 @@ __Config.php__ file register file currently support : PATH | DIR | RURI, make yo
 <?php 
 /*
 |
-| Register Current PATH - Require/includes
+| Register Current PATH 
 |--------------------------------------------------------------------------
-| CONFIG FILE | PHPHtml-Optimizer  :: TEMPLATES
-|--------------------------------------------------------------------------
-|   
-|  Ex. Project Folder root: Includes/   
-|  'Library' => SET_DIR_PATH('includes')   // you can get all file within this folder
 |
 */
 $PATH['REGISTERED'] = [
@@ -51,11 +46,8 @@ $PATH['REGISTERED'] = [
 
 /*
 |
-| Register Current DIR / LOCALHOST - Template
+| Register Current DIR / VIEW Templates
 |--------------------------------------------------------------------------
-| CONFIG FILE | PHPHtml-Optimizer :: TEMPLATES
-|--------------------------------------------------------------------------
-|   
 |
 */
 $VIEWS['REGISTERED'] = [
@@ -67,11 +59,8 @@ $VIEWS['REGISTERED'] = [
 
 /*
 |
-| Register Current RURI / LOCALHOST - Redirect
-|--------------------------------------------------------------------------
-| CONFIG FILE | PHPHtml-Optimizer :: TEMPLATES
-|--------------------------------------------------------------------------
-|   
+| Register Current RURI / LOCALHOST
+|--------------------------------------------------------------------------   
 |
 */
 $RURI['REGISTERED'] = [
@@ -80,7 +69,6 @@ $RURI['REGISTERED'] = [
   'redirect'   => SET_DIR_PATH('404')     
 
 ];
-
 
 ```
 
