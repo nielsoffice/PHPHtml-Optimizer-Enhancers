@@ -23,7 +23,7 @@ PHPHtml-Optimizer w/Enhancer v1.0 (support Optimizer 1.3.1.2 ++)
 | `GETFROM()`   | `GETFROM()` | Directory/Path Cleaner parameter of bring_to,view_to  | DIR/KEY/ ` bring_to(GETFROM(['PATH','inc']), 'hero', __PHP__);` `view_to()` |
 | `SET_DIR_PATH()`   | `SET_DIR_PATH()` | Path/Dir/Ruri - registration holder | folder-file-directory, LOCALHOST |
 
-Config.php file register file currently support : PATH | DIR | RURI, make your code clean and safe. here's mapping to sure that your config.php file is in correct directory.
+__Config.php__ file register file currently support : PATH | DIR | RURI, make your code clean and safe. here's mapping to sure that your config.php file is in correct directory.
 
 ```PHP
 <?php $Care = NEW \PHPHtml\CodeOptimizer\optimizer\Enhancers();  ?>
@@ -51,7 +51,7 @@ $PATH['REGISTERED'] = [
 
 /*
 |
-| Register Current URI / LOCALHOST - Redirect
+| Register Current DIR / LOCALHOST - Template
 |--------------------------------------------------------------------------
 | CONFIG FILE | PHPHtml-Optimizer :: TEMPLATES
 |--------------------------------------------------------------------------
@@ -72,7 +72,7 @@ $VIEWS['REGISTERED'] = [
 
 /*
 |
-| Register Current URI / LOCALHOST - Redirect
+| Register Current RURI / LOCALHOST - Redirect
 |--------------------------------------------------------------------------
 | CONFIG FILE | PHPHtml-Optimizer :: TEMPLATES
 |--------------------------------------------------------------------------
