@@ -36,7 +36,7 @@ __Config.php__ file register file currently support : PATH | DIR | RURI, make yo
 |--------------------------------------------------------------------------
 |   
 |  Ex. Project Folder root: Includes/   
-|  'Library' => SET_DIR_PATH('Includes')   // you can get all file within this folder
+|  'Library' => SET_DIR_PATH('includes')   // you can get all file within this folder
 |
 */
 $PATH['REGISTERED'] = [
@@ -56,11 +56,6 @@ $PATH['REGISTERED'] = [
 | CONFIG FILE | PHPHtml-Optimizer :: TEMPLATES
 |--------------------------------------------------------------------------
 |   
-|  ex. Project Folder root: saver/views/   
-|  'Views' => SET_DIR_PATH('saver/views/')   // you can get all file within this folder
-|	
-|  ex. Project Folder root: saver/views/templates	
-|  'Views' => SET_DIR_PATH('saver/views/templates')  // you can get all file within this folder
 |
 */
 $VIEWS['REGISTERED'] = [
@@ -77,11 +72,6 @@ $VIEWS['REGISTERED'] = [
 | CONFIG FILE | PHPHtml-Optimizer :: TEMPLATES
 |--------------------------------------------------------------------------
 |   
-|  ex. Project Folder root: saver/views/   
-|  'Views' => SET_DIR_PATH('saver/views/')   // you can get all file within this folder
-|	
-|  ex. Project Folder root: saver/views/templates	
-|  'Views' => SET_DIR_PATH('saver/views/templates')  // you can get all file within this folder
 |
 */
 $RURI['REGISTERED'] = [
