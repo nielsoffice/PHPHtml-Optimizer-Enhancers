@@ -23,6 +23,77 @@ PHPHtml-Optimizer w/Enhancer v1.0 (support Optimizer 1.3.1.2 ++)
 | `GETFROM()`   | `GETFROM()` | Directory/Path Cleaner parameter of bring_to,view_to  | DIR/KEY/ ` bring_to(GETFROM(['PATH','inc']), 'hero', __PHP__);` `view_to()` |
 | `SET_DIR_PATH()`   | `SET_DIR_PATH()` | Path/Dir/Ruri - registration holder | folder-file-directory, LOCALHOST |
 
+Config.php file register file currently support : PATH | DIR | RURI, make your code clean and safe. here's mapping to sure that your config.php file is in correct directory.
+
+```PHP
+<?php $Care = NEW \PHPHtml\CodeOptimizer\optimizer\Enhancers();  ?>
+<?php 
+/*
+|
+| Register Current PATH - Require/includes
+|--------------------------------------------------------------------------
+| CONFIG FILE | PHPHtml-Optimizer  :: TEMPLATES
+|--------------------------------------------------------------------------
+|   
+|  Ex. Project Folder root: Includes/   
+|  'Library' => SET_DIR_PATH('Includes')   // you can get all file within this folder
+|
+*/
+$PATH['REGISTERED'] = [
+ 
+ // live version
+ 'inc' => SET_DIR_PATH('includes'),
+ 
+ // Localhost version 
+ 'inc' => SET_DIR_PATH('includes', LOCALHOST)
+
+];
+
+/*
+|
+| Register Current URI / LOCALHOST - Redirect
+|--------------------------------------------------------------------------
+| CONFIG FILE | PHPHtml-Optimizer :: TEMPLATES
+|--------------------------------------------------------------------------
+|   
+|  ex. Project Folder root: saver/views/   
+|  'Views' => SET_DIR_PATH('saver/views/')   // you can get all file within this folder
+|	
+|  ex. Project Folder root: saver/views/templates	
+|  'Views' => SET_DIR_PATH('saver/views/templates')  // you can get all file within this folder
+|
+*/
+$VIEWS['REGISTERED'] = [
+ 
+  'Views'        => SET_DIR_PATH('saver/views'),
+  'VTemplates'   => SET_DIR_PATH('saver/views/templates')        
+
+];
+
+/*
+|
+| Register Current URI / LOCALHOST - Redirect
+|--------------------------------------------------------------------------
+| CONFIG FILE | PHPHtml-Optimizer :: TEMPLATES
+|--------------------------------------------------------------------------
+|   
+|  ex. Project Folder root: saver/views/   
+|  'Views' => SET_DIR_PATH('saver/views/')   // you can get all file within this folder
+|	
+|  ex. Project Folder root: saver/views/templates	
+|  'Views' => SET_DIR_PATH('saver/views/templates')  // you can get all file within this folder
+|
+*/
+$RURI['REGISTERED'] = [
+  
+  // For LocalHost 
+  'redirect'   => SET_DIR_PATH('404')     
+
+];
+
+
+```
+
 For Installation / Configuration <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Installations"> Process link here </a><br /> 
 For PHPOptimizer more examples and <a href="https://github.com/nielsofficeofficial/PHPHtml-Optimizer-Docx"> Documentation link here </a><br /> 
 For PHPMaintenance Mode and <a href="#"> SOON on <i>PHPHtml-Optimizer</i> v1.4 </a><br />
